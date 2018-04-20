@@ -56,7 +56,7 @@ The origin all paths's are relative to.
 
 =cut
 
-sub __rcopy { require File::Copy::Recursive; goto \&File::Copy::Recursive::rcopy; }
+sub __rcopy { require File::Copy::Recursive::Reduced; goto \&File::Copy::Recursive::Reduced::rcopy; }
 
 =method C<dist_names>
 

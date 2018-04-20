@@ -24,7 +24,7 @@ our $VERSION = '1.001003';
 use Path::Tiny qw(path);
 use Carp qw(confess);
 ## no critic (Subroutines::RequireArgUnpacking)
-sub __rcopy { require File::Copy::Recursive; goto \&File::Copy::Recursive::rcopy; }
+sub __rcopy { require File::Copy::Recursive::Reduced; goto \&File::Copy::Recursive::Reduced::rcopy; }
 
 =method new
 
